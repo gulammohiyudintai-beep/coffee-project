@@ -5,438 +5,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        .box {
-            border: 1px solid black;
-            background-color: rgb(74, 40, 24);
-        }
-
-        .box1 {
-            border: 0px solid black;
-            margin: 50px;
-            background-color: rgb(227, 200, 164);
-        }
-
-        nav {
-            width: 100%;
-            height: 100px;
-            border: 0px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .am {
-            width: 40%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-left: 20px;
-            font-size: 30px;
-        }
-
-        ul{
-              gap: 30px;
-            list-style: none;
-        }
-        .ir {
-            width: 60%;
-
-        }
-
-        .ul1 {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding-right: 20px;
-            font-size: 25px;
-          
-        }
-
-        .boxa {
-            width: 100%;
-            height: 700px;
-            border: 0px solid black;
-            background-image: url(./coffee.avif);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .h1 {
-            font-size: 60px;
-            color: burlywood;
-            padding: 30px 100px;
-        }
-
-        .h2 {
-            font-size: 50px;
-            color: #080808;
-            padding-left: 100px;
-            padding-top: 200px;
-        }
-
-        .button {
-            width: 150px;
-            margin: 10px 100px;
-            background-color: black;
-            border-radius: 10px;
-            color: white;
-            font-size: 20px;
-            height: 50px;
-        }
-
-        .boxz {
-            height: 100px;
-            border: 0px solid black;
-            text-align: center;
-            display: grid;
-        }
-
-        .card1 {
-            width: 400px;
-            height: 250px;
-            border-radius: 15px;
-            background-image: url(./1a.jpg);
-            background-repeat: no-repeat;
-            margin: 10px;
-            background-size: cover;
-            border: 0px solid black;
-        }
-
-        .bold {
-            margin-top: 70px;
-            text-align: center;
-            color: white;
-        }
-
-        .button1 {
-            width: 130px;
-            height: 30px;
-            color: white;
-            background-color: #08080881;
-            margin: 50px 130px;
-            border-radius: 15px;
-            font-size: 20px;
-
-        }
-
-        .card2 {
-            width: 400px;
-            height: 250px;
-            color: white;
-            border-radius: 15px;
-            background-image: url(./2a.jpg);
-            border: 0px solid black;
-            background-repeat: no-repeat;
-            margin: 10px;
-            background-size: cover;
-        }
-
-        .card3 {
-            width: 400px;
-            height: 250px;
-            color: white;
-            border-radius: 15px;
-            background-image: url(./3a.jpg);
-            background-repeat: no-repeat;
-            margin: 10px;
-            background-size: cover;
-            border: 0px solid black;
-        }
-
-
-        .boxed {
-            width: 100%;
-            border: 0px solid black;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            img{
-                width: 300px;
-                height: 200px;
-                border-radius: 20px;
-                padding: 10px;
-            }
-        }
-
-        .boxsa {
-            width: 300px;
-            height: 350px;
-            color: white;
-            border-radius: 15px;
-            margin: 10px;
-             border: 0px solid black;
-            background-color: rgb(197, 178, 156);
-            img {
-                width: 200px;
-                height: 220px;
-                margin-left: 50px;
-             
-            }
-
-           
-        }
-
-        .likes {
-            width: 100px;
-            height: 20px;
-            background-color: rgb(237, 237, 224);
-            font-size: 15px;
-            border-radius: 10px;
-            margin: 10px;
-
-        }
-
-        .buy {
-            width: 100px;
-            height: 30px;
-            border-radius: 15px;
-            background-color: rgb(43, 34, 29);
-            color: white;
-            float: right;
-            margin: 10px;
-            font-size: 15px;
-
-        }
-
-        .word{
-             width: 300px;
-            height: 400px;
-            color: white;
-            border-radius: 15px;
-            margin: 10px;
-            background-size: cover;
-            background-color: tan;
-            border: 0px solid black;
-        }
-
-
-        @media (max-width:992px) {
-            .ir {
-                display: none;
-            }
-
-            .boxed {
-                flex-wrap: wrap;
-            }
-
-            .boxz {
-                flex-wrap: wrap;
-            }
-            .saafi{
-             flex-wrap: wrap;
-            }
-            .last{
-                 flex-wrap: wrap;   
-            }
-           
-        }
-        .button4{
-            width: 90px;
-            border-radius: 15px;
-            margin: 10px 20px;
-            height: 20px;
-            font-size: 15px;
-            color:black ;
-            background-color: bisque;
-        }
-        .saafi{
-     
-            display: flex;
-           
-        }
-        .amir{
-         
-            margin-top: 10px;
-            border: 0px solid black;
-            padding-left: 10%;
-
-    }
-        footer{
-            background-color: #080808e8;
-            
-        }
-        .ul{
-            color: white;
-            font-size: 20px;
-            list-style: none;
-            margin-left: 30px;
-        }
-
-        .last{
-           width: 70%;
-            padding: 10px;
-            font-size: 20px;
-            display: flex;
-            list-style: none;
-            gap: 70px;
-            align-items: center;
-            color: white;
-            border:2px solid #080808;
-            justify-content: center;
-            background-color: rgb(74, 40, 24);
-            margin: auto;  
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="box">
+    <header class="header-main">
+        <div class="image-logo">
+            <img height="100%" width="100%"
+                src="./image/elegant-coffee-shop-logo-steaming-600nw-2619732279-removebg-preview.png" alt="">
+        </div>
+        <div class="header-ul">
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Blog</li>
+                <li>Media</li>
+                <li>Contact</li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
 
-
-        <div class="box1">
-            <header>
-                <nav>
-                    <div class="am"><i class="fa-solid fa-mug-hot" style="color: #1b1c1d;"></i>Cfty Solutions</div>
-                    <div class="ir">
-                        <ul class="ul1">
-                            <li>Home</li>
-                            <li>Menu</li>
-                            <li>Blog</li>
-                            <li>Media</li>
-                            <li>Contact</li>
-                            <li><i class="fa-solid fa-magnifying-glass" style="color: #241111fb;"></i></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <div class="boxa">
-                <h2 class="h2">FRESHLY ROASTED</h2>
-                <h1 class="h1">COFFEE</h1>
-                <button class="button">Shop Now</button>
+    <section>
+        <div class="background-img">
+            <div class="pt">
+                <h2>FRESHLY ROASTED</h2>
+                <h1>COFFEE</h1>
+                <button>
+                    Show now
+                </button>
             </div>
+        </div>
+    </section>
 
-            <div class="boxz">
-                <h1 style="margin-top: 10px;"> TOP CATEGORIES</h1>
-                <p style="font-size: 20px;">Explore The Recent Most Bought Drinks This Week</p>
+
+   
+    <section class="card-1 ">
+        <div>
+            <h1>
+                TOP CATEGORIES
+            </h1>
+            <p>Explore The recent Most Bought Drink This Week.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="card-main">
+            <div class="card1">
+                
+                <h1>Coffee Mocha</h1>
+                <p>View More</p>
             </div>
-
-            <div class="boxed">
-                <div class="card1">
-                    <h1 class="bold">Coffee Mocha</h1>
-                    <button class="button1"> View More</button>
-                </div>
-                <div class="card2">
-                    <h1 class="bold">Expresso Amricano</h1>
-                    <button class="button1"> View More</button>
-                </div>
-                <div class="card3">
-                    <h1 class="bold">Cappucino</h1>
-                    <button class="button1"> View More</button>
-                </div>
-            </div>
-
-            <div class="boxz">
-                <h1 style="margin-top: 10px;"> TOP MILK SHAKES</h1>
-                <p style="font-size: 20px;">Explore The Recent Most Bought Shakes This Week</p>
-            </div>
-
-            <div class="boxed">
-                <div class="boxsa">
-                    <button class="likes"><i class="fa-solid fa-thumbs-up"></i>30 Likes</button> <img
-                        src="./a1-removebg-preview.png" alt="">
-                    <h1 style="text-align: center; font-size: 20px;color: #080808;font-weight: bold;">Mocha Shake</h1>
-                    <p  style="float: left; margin: 10px 10px; color: #080808;font-weight: bold; font-size: 20px;">$20.00</p>
-                    <button class="buy">Buy Now</button>
-                </div>
-                <div class="boxsa">
-                    <button class="likes"><i class="fa-solid fa-thumbs-up"></i> 30 Likes</button> <img
-                        src="./a5-removebg-preview.png" alt="">
-                        <h1 style="text-align: center; font-size: 20px;color: #080808;font-weight: bold;">Lavender Shake</h1>
-                    <p  style="float: left; margin: 10px 10px; color: #080808;font-weight: bold; font-size: 20px;">$20.00</p>
-                    <button class="buy">Buy Now</button>
-                </div>
-                <div class="boxsa">
-                    <button class="likes"><i class="fa-solid fa-thumbs-up"></i> 30 Likes</button> <img
-                        src="./a3-removebg-preview.png" alt="">
-                        <h1 style="text-align: center; font-size: 20px;color: #080808;font-weight: bold;">Carmael Shake</h1>
-                    <p  style="float: left; margin: 10px 10px; color: #080808;font-weight: bold; font-size: 20px;">$20.00</p>
-                    <button class="buy">Buy Now</button>
-                </div>
-                <div class="boxsa">
-                    <button class="likes"><i class="fa-solid fa-thumbs-up"></i> 30 Likes</button> <img
-                        src="./a4-removebg-preview.png" alt="">
-                        <h1 style="text-align: center; font-size: 20px;color: #080808;font-weight: bold;">Furite Shake</h1>
-                    <p  style="float: left; margin: 10px 10px; color: #080808;font-weight: bold; font-size: 20px;">$20.00</p>
-                    <button class="buy">Buy Now</button>
-                </div>
-            </div>
+        <div class="card2">
+            <h1>
+                Expresso Americano
+            </h1>
+            <p>View More</p>
+        </div>
+        <div class="card3">
+            <h1>Cappuccino</h1>
+            <p>View More</p>
+        </div>
+        </div>
+    </section>
+    
 
 
-                   <div class="boxz">
-                <h1 style="margin-top: 10px;"> LATEST BLOGS </h1>
-                <p style="font-size: 20px;">Explore The Recent Most Bought Shakes This Week</p>
-            </div>
-
-
-            <div class="boxed">
-                <div class="word"><img src="./g.jpg" width="300px" height="200px" alt=""><p style="color: black;
-                margin: 10px 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus amet impedit, id qui nam numquam tempore temporibus ipsum. Deleniti eligendi repudiandae voluptatum saepe ea, eos quaerat voluptatem aut veniam?</p> <button class="button4">View More</button></div>
-                <div class="word"><img src="./ul.jpg" width="300px" height="200px" alt=""><p style="color: black;
-                margin: 10px 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus amet impedit, id qui nam numquam tempore temporibus ipsum. Deleniti eligendi repudiandae voluptatum saepe ea, eos quaerat voluptatem aut veniam?</p> <button class="button4">View More</button></div>
-                <div class="word"><img src="./ma.jpg" width="300px" height="200px" alt=""><p style="color: black;
-                margin: 10px 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus amet impedit, id qui nam numquam tempore temporibus ipsum. Deleniti eligendi repudiandae voluptatum saepe ea, eos quaerat voluptatem aut veniam?</p> <button class="button4">View More</button></div>
-            </div>
-
-
-            <footer>
-                <div class="saafi">
-                    <div class="amir"><h1 style="margin-left: 30px;
-                    font-size: 30px; color: white;">Product</h1>
-                    <ul class="ul"><li style="margin-top: 10px;">Shows</li></ul>
-                </div>
-                    <div class="amir"><h1 style="margin-left: 30px;
-                    font-size: 30px; color: white;">Category</h1>
-                    <ul class="ul"><li style="margin-top: 10px;">Men</li>
-                    <li style="margin-top: 10px;">New in</li>
-                    <li style="margin-top: 10px;">Weeky Pick</li>
-                    </ul></div>
-
-                    <div class="amir"><h1 style="margin-left: 30px;
-                    font-size: 30px; color: white;">Company info</h1>
-                    <ul class="ul"><li style="margin-top: 10px;">About us</li>
-                    <li style="margin-top: 10px;">Contact us</li>
-                    <li style="margin-top: 10px;">Payment optiona</li>
-                    <li style="margin-top: 10px;">Track Order</li>
-                    <li style="margin-top: 10px;">Support</li>
-                    <li style="margin-top: 10px;">Vauchers</li>
-                    <li style="margin-top: 10px;">Size Chaits</li>
-                    <li style="margin-top: 10px;"></li></ul></div>
-
-                    <div class="amir"><h1 style="margin-left: 30px;
-                    font-size: 30px; color: white; ">Follow us</h1>
-                    <ul class="ul"><li style="margin-top: 10px;"><i class="fa-brands fa-instagram" style="color: blanchedalmond;font-size: 40px;"></i></li>
-                    <li style="margin-top: 10px;"><i class="fa-brands fa-facebook" style="color:bisque;font-size:40px;"></i></li>
-                    <li style="margin-top: 10px;  "><i class="fa-brands fa-youtube" style="color:bisque; font-size:40px; "></i></li></ul></div>
-                </div>
-                </footer>
-          <footer>
-                <div class="last">
-                    
-                        <li>Data Settings</li>
-                        <li>Cookle Settings</li>
-                        <li>Privacy Policy</li>
-                        <li>Trams And Condition</li>
-                        <li>Impint</li>
-                    
-                </div>
-            </footer>
-
+    <section class="card-2">
+        <h1>TOP MILK SHAKES</h1>
+        <p>Explore The Recent Most Bought Shakes This Week</p>
+        <div class="card-main-1">
+          
+                <div class="card4">
+                      
+            <div  class="bgimg">
+                <button class="b1"><i class="fa-solid fa-thumbs-up"></i> 30  like</button>
+        </div>
+        <div class="text">
+            <h2 class="h">Mocha Shake</h2>
 
         </div>
+        <div class="last">
+            <h2>$20.00</h2>
+             <button class="b2">Buy Now</button>
+        </div>
+            </div>
+            
+        <div class="card5">
+            <div  class="bgimg1">
+                <button class="b1"><i class="fa-solid fa-thumbs-up"></i> 30  like</button>
+        </div>
+        <div class="text">
+            <h2 class="h">Lavender Shake</h2>
+
+        </div>
+        <div class="last">
+            <h2>$20.00</h2>
+             <button class="b2">Buy Now</button>
+        </div>
+        </div>
+        <div class="card6">
+            <div  class="bgimg2">
+                <button class="b1"><i class="fa-solid fa-thumbs-up"></i>   30 like</button>
+        </div>
+        <div class="text">
+            <h2 class="h">Mocha Shake</h2>
+
+        </div>
+        <div class="last">
+            <h2>$20.00</h2>
+             <button class="b2">Buy Now</button>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+
+    
+    <section class="card-3">
+      
+        <h1>LATEST BLOGS</h1>
+        <p>Explore The Recent Most Bought Shakes This Week</p>
+        <div class="card-main-3">
+            <div class="card7">
+                <div class="image-40">
+                    <img height="100%"
+                    width="100%" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcPi1rHDzzgqXNdif8ZdlAvpdzJ8eoGQIKFIVD8Lah4otxel5X" alt="">
+                </div>
+                <div class="text1">
+                    <h2>Coffee Connoisseur</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus architecto saepe explicabo sequi provident, expedita totam neque. Perferendis eius quae impedit eos non ut suscipit quidem, ea consectetur dicta.</p>
+                    <button>View More</button>
+                </div>
+            </div>
+            <div class="card7">
+                <div class="image-40">
+                    <img height="100%"
+                    width="100%" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwoLCgsNDQsICQgJCA0HCgoHBw8ICQcNIB0WIhUdHxMkHSggGBolGxMTITEhKSkrLi4uFx8zODMtNy4tLjcBCgoKDQ0OFQ8NFSsZFRkrLS0rLS0rKystKy0tKys3Kzc3KzcrLTctKy0tLS03NysrLTc3KzcrKy0tKy0tLi0tLf/AABEIALYBEgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYHAQj/xABHEAABBAEBBQIICgkCBgMAAAACAAEDBBIFBhETIjJCUhQhIzEzYnKCBxUkQUNRU2FzkjRjcXSBkaGxsqLBFiU1RFRkg5Pw/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAJhEAAgICAgICAgMBAQAAAAAAAAECEQMhEjFBURMiMkIEUmEjFP/aAAwDAQACEQMRAD8Aw9wyjnj3EQkNSHo5EYExcQX5SLly5BDNDam3yp/wIkQPKXvCuZPSLNbYacJDLv6cceVF6ccZY8vNw4f7KOy3l/a/2dKgGOX4cX9k/gU91OQhqSeLm5QWXleMuseEXeBabWnEaUrl9mJrD+Gx5DhF/rLM0yjYHKh01iKMuSTL1oeRR/G83S2PtYIF2LurxmT8UJyYSdiWXqkkL2zTGZS1Kc0pMABzF3+RS3KM1cnGQMe6jroG+wffy7lpYyLhj080IrMH0rR1vRRfggp5CmMldy9X0ajcy/xXpJiRFGDTyjFJmfTIOBYd5k0blmT0MOP62boUlmHiEO+PIfdMPW3qcpCii4TRFKPNjKBl4QG/5n7wpmBI0W01o7OhHLc1u3c1Epako6bEHgVTTxJ+63Wsqdi5BIRyFJcgIs+LMecv8SUGqhJx6cz8YhKETHM/K8r7ib1UdS1p4o8QrVily9Lbys/6X5Uu1H2B1yfgTXoJJInY8ooozsl38vMLL2xqJl4g5RVXLIRTEZdUhZycmAflZevMm4o3IIaUhLLJaGG7BIO9pB9H31kXciXizjZlKjXT6jFF5vKEjYTyjEu9HmsQ0hd5bDTTyrRP+pFRlGkPGVsCtPjJIsw83Fn3mWWOS0OtngMrt3VlIHxJWxryTyPwKaLpLvJ9c1JKePix5U+rH5Txq5EaUo5dK9m5cXZQ22xl8SbJLksAJkxIVGB8pcyGjYiLFlOVeQfOsEieUhJSPYIsWYU44eVKtGJcvaWMQbySReC9WMaXWh+VH7IqvuXcp4xDp8JD30btbMIWpmbvKv0ejnI0snTkPDFc0EuKbLzdyaRrrQ/KR/GJPiYRy3fZgvLn6W/7wX9HXldvJk/sf2TABtof0Cx+7F/ZZjZ7RLl9nOHhxwDJgUky020Xj0qZ/wBQtPodKKvTjjjHEBFCU6joMIW9mIm2KMI3fjcWyPZ6AQAVwjyB4hjljLAhPrAl03VjlinwiihxKEDy4OZ5OuZaw5jqsrk+RmSVSb7ZmorpE7Qjjv6e2PfUG0kgyR1iy5vK5D+VQzXZGk4UYZEgrUkpj5Qce6ngt2CTVUBH0q8pTDwom/UiqR25S/DVlTaKSKMWLyoxjl2DTT6Fg9lhvEvMmb17FHiPVkmmpoqyTPlSaQi835kNFJlykpWIox8fMSwLAjrkJSG75ZFn7Cic0XPLkO5DsHup7BRFuIl5ipXBN3LWGiNJSbl47LWahi2GivlVi9klkdy1Wzz/ACUfaJJk6GiM1IOb3VnqtEpbJCwj2lpNSDmH8NP2RrR+GWZj9HBXSqVRs3C5UZfVKwxDz8svdVa0xY4q/wBprMd2w5QBlHH1EqOYxLzCIq8Ha2RyJKWgcy5khkIU4o+XqU4RCUaoTHxuJDliopJS7yiPIV43MsYl4xY49lSVh+v8qEZ+ZF1nHEiWMEvJ/wDsEkM5JLGD7jlJWIzfKUrfMR9eW7etBSb0XuKitAUdQRfqK3mX8WV/Sbnh/EiXPPwWh5Lq6Hykn7PhZqI2xrF7p/0RFr083d8JL+6HnYuAQt9mH+KJgTX2f4lkf/1olqqTFwI9z/RjyrN683/JZvVrCqjT5rxRD5S6X5kmRWhoOmbXUA1AZOSMpYihA8gMQACXOtb3/GZC/WJcyu3h1KX6O/L7khqg1KKQLgBIJRyD2ZloI0iTTGH4xHf09pE7UVgj4bx9JZcqrQhKSyQsRCXD7He3KTUYZgDynMPZTpfZCv8AFlU6koVeKJFliQ9KYSM0J+UvdTyeicFbPYbpRlhJ7GSNc1AUIyDJv+2JNov5IfeUyy0Ts/MopMurqUjdSUjLGBmBe7kF4cQyE27lyIPX8SIitRl2sS9dFpgUkTftTXBO3pM6UdDdya7Kdmy9VNMFrDRDuWj2dfyBD3ZiWf3K92c9HK3rChIKCNS7KdodmNmmhxGSWzNEAiZpam3KP4ipJJSisRyh1CQmKVK1QbqRtNpKMFXSpnhhESx7ALmMkJCI7+1HmuwcEbmnCzllxIc1zW+YiUkEo4lF6IkcEqtGzxumZ5OfvMi/Aykydkw4yjj3Y8wydS6UzkcWgX9q9d1OzRjH6ygJMAZuRMEMkhYRRlKZdkFcbLaDNqE3DjDLvEu2bKbC0tMETceLZ7RGpudDqHs4d/whrH/iyJL6a3R91JJzY3BHzTqr+Tj/ABP9lfUuuL8QVn9QYuBH+MX9GFaPT2ylhb9cAIZPBsfkvTbKWX97L+jqO63yZvF2hD/SnNy25fVsy/0JCHJyyD7OP5UTEWvf9Hs/uQo/RtXkKKMTEcRj5iVfr/8A0mz+5CmaefkI9/aHmwU8q0PjezdnYimiicJposYRAhA8Fy3a4BHVjZnIunmP9ivjlIR8Rcqy2tPvug7oYwyFQPC/vRe0NkpYxyx5cscAQFb9NL8NT6r0Kn7Im/xZTMyfpUIyZb+zj0JrMptE7XuqkuhIdhJVpI8sJS9/nUdD0fvOjzQFLpL2iU10Uapk7dS9Pp95eN1L0+lAYz9lvKyfiEo3dS2vTSe0SjwLukuhEGWlEyKL2eRKS0MZYum6a/ki9pD323y9OXk1KrZS6iiyhljk8xIgVnGbHzEi4b0o+fmH10HD0NHJ7LVwR+lWAgGRzfES6UFTN5Y88Ux9MszysINxLMnc6AScfZRy9FrPqUE44gX0irr3UP4aIn2OtwjlkMkqqwKVi4UrEJiSKS/Vivkn9kbLZDVWjqyxmXMJZxiqXVq/hlvJo8e8tFomz9Io2klyJaAK2mg3JVj4oiWMnbXE/wCTFS0jsWCTjs57RrHXkwcC9VWEmkBLCTdqTnyVsc1iKdop4ZpeIRcKQAEIVYTVxEfNGPqq7mxFiVUctt6LbikxaPIe8CnpbPWZijDHGWWQQFb84hIeVW2ymmidsTIfRJ/nbIvBFbNNsZs5DpNMBZspyHOQloxbJQh1J7nzJhKPd69TEkDHzXqu7hRNgXUf9hWjom/Fj8X0gLO6kxFHD7y0NH08P48X91SXglDyWpfpszP9vL/dC2ZQjEyNxjEsOs8POydbm4dqU/8A2bH+Sz1qkVmR5JZciL0cfYAWRSsVsN1jVqU1CaIbEPFkhEBjzRGkvGUMbuYkSy1nR34mMblKZdMcIZmaLobPatEJyvWt1ijHOPMMDQnFNdjY20+jW34Six3vzFGJrI6y/wAsD2la6fq0l1iCV8bkHZwwzH61W7QQnFcASUoKpNMeTuNkED/LS/DFEaqeUaGr/pZfhiirOMhsH2fOSp+yFf4sqAZP0fzv7KLq6Rat2d1ePiFHiZdxTbQ6LPp8jSx+iLq9T9qeUl0LCDWxzugafSX4xIiGwMkYm3UXUhavb/FJKij7CHdOd+VNSmPGMu92RWMG7NbNvqU8hbyGDLykn+zLVX/g6qBHynMC82IM62mxHHFNOc88vof27t7q9uard+LwlOIhnkmGHGaEYTD9osoynK9FoQVbRyi7pklOU4XLij18RATliRd6QcFpNbsHJaYCYhlESApDh4IHvWYsnlw39UleFvs55Um0iEQXor3eKfDGxSRj3pBD+aawUaCsQwRRC/eEy/hzLW7ByVxaxIRRjPPJhGPqssbqfKW5u7mtJsTpgnVazJJ5IZiARM+0o5PxL4l9i41bVomMso5OFEOBF1nl9wssHr0eMoTgJCMmPWGHsroNmzVisO0jjP4WIzDHWMeNk3UsptxNHNG5ROXKpQa1RXKm4uzU6Vfjt0YZQAR5cJBDsSN1Ky0q1HHMxnGMoYlyn0LAbDXsDmgJ+ScfCY/aZaXVrEkVUjB+ZceTHxyUdWKfPHbLS7ahGQByhOUcuUDzOBV9+yBjyksrVuyQlm2MZFySEEOaLB5JppJIchpllkJn5bJdPEnzD6tnCTc/aW+2Rr+TI+8uZ1YTktxAXLiXMur7NhjWFMlslkeizkkxIR7yli6iQwtlO/qowGxHe/UqEGPwXqckmAfNlxgca4u+JFIfD/0q6onumi9WYFSakG+Ou7dQkQK28QsRe0aaW2qJRdJi1O42NqfsCUpj7TrPU7E1iRmYseJIrmSMZnpwyNxIpLInJGeXOLNv8e5bjRNiKUFmGwDTAHWNazz+Cpp5Ix0wwxyltGh2P0eOhWF2iHwmUc5JDDyyfrJ9fSre45lG7QnGJ49sM8Fz2ts/em1aR5pJjiLqlwGth/Jcst+Trha8FFqdaMLoys2JlGQEQd11nNaNvCg8avdqq89TV5Izf5IBZxl6rrNajYGWzHiWSrjTvZHK1eh1f9LL8NSxyDnK/akUG/dKW77NBz2N0W5uUyLMvadViRZu9iLcMMc0pjOfMXDjrBmZonaHU45aUUvgxDFckOESm6AJV+x50vi+TwqISjHI1faxeINNiaKGkQiMVnh+E89ImfzYqDa5HXFVE5fTcopzjccRkHMVLWfmk/GU+0l07FyOfERIoR6ENTfLiP6yu+rOaqdBK8nbIR9peryd+VBBZ0fZGTwfT4RF45+HHhJh9AT+MhdP2jlsS0mOKUTgKQZpPkZdTLEbBa0cFueE/KR2xKx65yMtjr2taTJXJmszjIQllGAYedc8o8ZbOqE04oz20Nl7D0n4eImOY+uKxc8XKXqyF/R1pmvlbuNy4wVoAhiE1TAe95CJhx8IP+rq8NI5clOVlPvdGaOzSXIR/XCf8lJPWiciYeUe8jNm6YjdA+yIknbVCJOw3Wo+ff8AqUdslYlMXgGSvnWkKzFFZy4JyOyh1aPxA/uLPXZZatsZIiKMlPjaopz4Ozp0+m6c0byb5yvEOBDWDwYP4blmdqnCDT4YRbGU4yy+1/a6m0/be0cW7weEpcfSLJaxqUliUiIuIRjzF2AH6mSQxy5bK5MkeOiWhKDxMW/KzB9H0Zitxbtx2KOcb5ZCJ4rmgGQFvF0TDesRC7RyFHxPSYJ8uBzaaJYv5Cgmma2tIEbDITjw45BOQULpupxxW5SMi8DEjOOMOTzvyrNHcnJnZ5JMSQ/jLzkSywNdm/8AR6OgaBcaxqzCzjzCRiIHmuu0A4VcR7q4V8G8LvrlXFsuo5F3i+/DjSyjTHjPkF1WFgI3TQI5Jd7dIqCWXCAPWRFNgjDeRIG/0MSUPhsP2gpJrEpnzlcAikrCPrI/UpGZgh34lJgBYJ7RSxRhIFexPZIcIxCEjCAX+dyQ7aRqIO01mCSDiScYeN2x+5VVdkaYNrNmSIoZQcRljnGaP+DrqGxO0/xtHK5xjAUUmGITZ5rkuvn42buirz4PZjaSSOJpCn6xGFTzRTjZXDNqVHWtS1Ea4SG30cJHis/pV6YxltPJJ4SQljEFMjCr+0X6iV/Q0eWWICucOM8eaIDzVdqd3SwlON4SklGPASwzzHtMxLkiq7O7kn0c/wBp9VkvSE8mMUseIF6+5Zoqr8bJ5BLmzX0HoWi6DarDK2k0BPoMbNMZj/qsn8JGm6dXpmUVKlWl5eatTGE11pUtHDOScjmRtGxNubIusv5bt6rTpvJuwKHqE5CmmGEIPuydS3SOMS3EIZcnfMxUei+Cgb2LMkeFcuWpjxZbpOyZJ1aBNpI2FLGsMskbQnVlIDgrV+fldhydH6ltDpE1Xcc9mI/pYoYcFX7NWZLdaWZ4SbGdwHt5j9yqtoWGYiJmEcY+YQXPFfamVhJqGtmd4gSlMQsQ5SDwxPuspaL9XuoOOMgyTqsrjI3rci62iKZau6RszgTP3U1eTP4xZIkabpAFCc6tyCT7KYT93tMtvqetaRLHkJkUv2YVi4yx/Dbzvyklg3mcSx7ufImlBPYkMjWi50axxTmNgEBGQeGP8CU9PSHKGYnYiHEph9fdkjtkaQyRGwjiXD43vbyZaS1EFWhcJ29FDN7m9slCUqlSLKNxtnLbEmcnrFkaO0pyiZj7RiUw+yzKtl8Ug/gkj6R75IwftVpYR/kuiXRzwdMtZJRmrZcxFwxm/l4i/wAVRa2GYRyo2lYeOLLcRdvH1X6ktTpTBDNEcU0ZR/KYs4S9Gki6ZeSbRn4pZAZwEiESSEF4DtkpWZXSOds8ZkndOUbumAepi9F01YyOifAnRItTnmdiIIq2HvOuuanzMTLK/A/prV9IjkIMZbcstsv54itRdfy271Vx5HtnXjRFW3yvGzum7WwyHSLhGQkIqWlvc3FsRFP2jsRQ0ZXLqISSeCl7Rxp9Rtf+RP8A/ckpfAJO4SSTkjoo6rqEMEFbBo48I+kVznVNawgsVSxICHwmDP8A7WTf8y1+1t/hxF41iNF2XtapZCaTyGlD1SH/AN19wpcTSttkcq+tJFVp+zF3W7JjDjFViIQltzB5GBdY2X0KjosBhXYilIfL3bHXMvSmr04QhiAY4Ih8nFCqaS7JclGMGEZRymIpj5DWnllPUegQwqG5Gnm1aIfMcIj3ppsFjdpdpCr2C3X4YAx8mIQqHW5bVatIecPFxHEawdHjXMNSsSzSOUpySHj1GqY8LfYMmVR/E7NsftdpY1ykl1OCOSX0o2ZuCqXabX6esXYasEw2awfK7JVug9y5nThyjkZWGyXkrExPykMCs41F0Rg25Jtdl3rmkxeGmRnGNOQSCMc8MJMfM25ZTVaoBbeKFilKIRA8A+kbqWzu3nIXGGLi6hKWAkfQEbKq1+SaKAJob8RFcIeLWow+j3NuLfI3rKWOUroGaNSNFpmtUiEKFYvJQVgMp8OQy8xKLwKCKOUibm7ypNnKAwQlYkceLKIwx/xdX8TvYLh/mU5RSk6K/wAdKmYWaPKQ9444xoatRPjOHNkPOtLrlN4r0wbhykhHFVmmyk92IjHHGQoSXSp60K4K9is7o5SHd66hsmzMLiym2gB4p39lRTADxxkL8pQhln2JGbmRj4ZPL5Iupt6Ts6bC+59zqVUIG3+DRmkknBuyIK92ur/8r1PF8SIRm90RVT8EuPF1B+7DXUu2mqtHAW58gsiYe6Yk3+Mq5JK8mjqi/wDns5fZffIKmCRwkY+1Hjig5C8Yv7KvND0o7hnv8nWEs55T6IBXW+tnMv8ADV7GeBtSzjhklucPCWSaH/FbMJBtxxzxCM4yDzRGsHT22qVJJYI4safCCtFL/k6N2X1eSjfYYpBt6dL9ieeH3rlnF2ehjkuJpZNldI1ACc6Mdacurg+RlXJ9pdIehdOHm4fXHmu+ynnuKNsVhfhE0CW5G0kYZSitjyNSpsTJjTjcUclTDZTTRlGTg4kJdoTDDBQObfWu04jxmSdl5G6e+5bXsx9H7BQsGh6b62lVz/mKLv8ApBJDbEzHJounkTkR/F0IEX7BRN9uZckjsgQg7x2GLfyFGgr4FcNsvRCXSi7beTF1FB0qE5VovCKbsH+Lou6KSN3JKRUBn0SKxKMtt+IEfOMH0P8AFS3bTADCDDiI4CIL27adh9rqVPAxXJxjZ8Yh9ISEYt6FbrbKTafWnqQE4AUhyFwY5MOTJZPZXXpIZ5fCOMQzlmUmHQS7rPptQ6ow8OPhCKyR7NwwyGwBHkJZiWC7IQUI0cc8jm9dFbciCxWKbMpCxzEf2fO65XakE5JHjEiEun1/vXc61F2ORpGhKI4yCQcOQxVBtHpNKGCM2CMZ5a3c6I2TwnQko2c20qJ2jbe/URGrGKPgE5OHk5BECVRpdnAhZ3W1hijni91DJaZbE00bfR9j9JsV4puDJ5WAT5LknS7Ky/4J0iIGEKcYgpdjHZtOrNlyxw8H+XiWjmceH1yJ0k0c07b2Yu7oOnwxCA1KnDiLOMTrZgBLGa9qcenk8zRRlKRcEYw8jzLomsejJc02ivQxbwmiGzBZyhIe596SlY8E/DKzTZJ9ZsyTzFX8mIhIXlIYQF+lvEmbS0amn7iwHGQyGuVbI/CdzedyfuKPQtcqabJNWMLFmnLhYjkDELEEjdSE202jjvtBFDBJDWrFKfyvHizE6X786X4Ffrx32LaaNiijPvCKr9nYysW4axkOF63X07LuZEI71p7ul8aiTs+RxxieIJbNfB3rs417UQ0qouQXIivWFWEr0TzLybGv8C8Y7nl1aYv3egMKF1r4MNOp13lfWLFXnih4uo1o5q+RPu6RXWBl8mObxieI5YHyZfcs/tDJYKNhhi0q2BSCckerhxq/i8YumbRHickbiaBV1aGYhHUJbI6XEIH2RyIi9ksll9a1I7E5xxvxYBkAIWDn5RAQH+fDT9t2mfULBy3auoWrBPYnOgGEISP8zL6C2ei0qPSaErV6g8WlCeQB1k4pdJWGm9I4lpmwF2wwSSuNSOT6PrmRO0ByNG1DT6V/4vrF5WUKEmd0m+d12hrNRifdHUEBRPhxyM7gfZwHBT+T2U+J+D5w0HRxv6pVpzPJWG3MUJSYc4eInXZdH+CilRPihdvlL7EfCSubHwS6jDqHEsRXoJorPqHi61U2pSF4mDAU0siaDHFJPRnzsHVJ45csejJKezDNETMWSN1bhyxO5NlKPSXf+5ZSO5wzII3xD2FCVeDqj7I7WxOm2p3lmjml5emGyUKKrbNaPV9FQjEu9MHhKJj1M37OSPhtDJ8yVylVWbhG7ooZ49FjsVwswCUc82EcfBHg5efxkiw2G0vU5iszU461YREIq1b5N/Etyt5K0cu7IR6u4pYmniDCKSQQ5uXrRhNrsWeNPosaFWOrDHDE2MUQiEY+qyHudSkqSyEO4iEi/Ih7TvknbsSKoRtlGg4ES9gcNyDjdSyF8YUkmb0lIpRUw15b83CiyGLLCSXsI4Kw1Z3GNsQFWcTyAItDYgrCI4DHDT5AFQhQMicyl45frjwBdMeKRyTcpb8Ej3x4fnFVx6jGcgEZdUhf1VqOmhw9+6biD2YYRP8A1JjUBc2P5aPtzDCCpaI1Rn5L1mWI2hgs5ERYl4NyYoptArXGCSzLdi8iNQov0bDc3sutAEROe9xrYFHgI9v+JKfwaDxZCtYTMVfgy2Tb/tZZ/bvTOirOz2gUhbhReDRiOBfKSM/zETrSAEfzES8Noyf6MkW7X2BFU7RWaLcq2Acq4DFWCQoREAwVubcqgeIhLljKUcewpTlPD0EyZPQkuyl1gOQmWCs7P/GcpM8nCCsX2Oee9dA1Cndl6II//msiCoYdk7rnKUlzwYZSEyiqAkeikGVMWyGljuado7JBjjJNDgZ7mQdrSLkL50I9HgnIj4ksNYeff6pLXxbLjH4/CrJl68yKHTDAfFKUntqdyvZVtMwz6VtIDQuFmliUI5RBQ6PuflV9ptbUyGJpwjE8hylqWfBAx+8VfeDyMI+TjP8AMkELCXPAP5ywTchWvI4aD/PLIXtzIa1otWbcE3ElEuQh8JIAP3WVxGBiIsEUYj3c03htvd+BzFGUPECYgMBdVWNf2IvJL+pQhsnp4MQwBUqF3oaAzGCsq0MY0I4ZjGcouQZcBh5fZZHRyBFuc62I9qQD6/2qAbsG8haMRH1AzSTtaY+OntIBjo0QHzfnNGQSxs26NhEUNDqMeRN4OUnsQqZrEj83DKMVFs6qCGkb53FLlfzIdpCPzMpWB+06Sw1R4cTF4tyHPTK7uRMA5l2sESD+sps2RQGZWzs3IBkcMpEJfRzJgPai8UsBfiQnmtY7smuwoWZMoINSjfzsSJC4P1ijZKkRdgUIemx/MyHJjaZPDYF/MvJ/Gh4qvD6XJOKM/rTKaoHB2CGBZJwNzKV4iSYHbzslm0x4podvSTUkgxNW1anL4n8kfdmDBHxx1zZnYx9oDwTaGnR5u7gPLHgpptHhLeTiPN3Owur4mjg+QfwZGyxkkEezmeadhL80gn7aC8AsBk0diYQ+zSyug+52hkH8hocJIPJBRyEPnjEvYTQsATO+CDk1HHxnFIJKE7UJOz8TEiSuTXQyimWmYP8AOpQZ+8Koid36ZBL2FMJSC3jZJ8zXaH+IvYwJ1K7Nu80ioAvkHSSKh1sSfHmVI5l5JyxPxsNlZ/mkIfbUBvN9oKa99ibfyqJrUZecRWc17MoslGWf6hJLwgm6osvYUByx+Ych9hM4xt5jS86G4BTzR9qNOCWJ/nkFDDZkfzvGXtp3FMfPEJewjzBxDvP201wLvkhA1GMfPGQpz3YT7RCnU1QvBhQNIz9QkKb4O7E7tHjl1ECHawA9MhKeOyI+d01pgprojOEWybyntKB9NE338awJKzGxGXzqGeaIOohSuKGU5A3xZ9U5JvxWbeexIhLW0NKDtrN6ltxk26ECIktIZc2a96DD9ISrbt6KsBmdiHlXPLO0OpmJM8vDD1FSzySSc0spFl31uKGtrs6HS22pSyMDGMZK+hvxSeYhJcFuSARO4uREPSQI3TdoLtYh58g7povDa0ZZV0zunF+9IpWXPdI2yikbca0VfWoi7QqTg12Ui4l9xBXmYqra4xeYhXvhDpByweQVDKbfWhOKvDyWGJOIkhsXSWCanQ77WSl5MMRBWwxsQ/UkkvRXR5T7IvF9S8k3ebc25JJL4MyCSON33OAuhZqEL9lJJLJBTKuxo8TeNnIH9RQFQki8YzyJJJJQj6Lpsr57xC+5xElBDa3GRY+NJJckzoiWla1xH3OKguyvuJm8SSSSPYWiKpxcvHITo7ww2PckkimZo8ivNl0IkLO/5i/OvUlaPROXZLk7rzez/Mkkg+zDmBlXXbRRjvZJJFGM3e2psxliPiVcWp27DERznu+oUkk3gWtgou3NvyL2iSNhZt+5JJEJUWLRk5Mg54vHuIiJkklWCJTZBJGIeZlCcbJJK5Ihc3YsW8T/AFqapqc8XmMkkkGjRey/obQTurytq8qSS5JLZ1xei1rXjJGR2yJJJSZYk8If6kkkkQn/2Q==" alt="">
+                </div>
+                <div class="text1">
+                    <h2>Coffee Connoisseur</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus architecto saepe explicabo sequi provident, expedita totam neque. Perferendis eius quae impedit eos non ut suscipit quidem, ea consectetur dicta.</p>
+                    <button>View More</button>
+                </div>
+            </div>
+            <div class="card7">
+                <div class="image-40">
+                    <img height="100%"
+                    width="100%" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlmXV_C1gUoDm-aiCVMacLwagHPGMvZgXdzgRjmzx7dR26RIpp" alt="">
+                </div>
+                <div class="text1">
+                    <h2>Coffee Connoisseur</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus architecto saepe explicabo sequi provident, expedita totam neque. Perferendis eius quae impedit eos non ut suscipit quidem, ea consectetur dicta.</p>
+                    <button>View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    </div>
+    <footer class="ftr">
+       <div class="line-main">
+         
+       </div>
+       
+       <div class="line"></div>
+      
+       <div class="text-main">
+         <div class="box">
+        <div class="text2">
+            <ul>
+                <li><h3 style="color: rgb(255, 255, 255);">Products</h3></li>
+                <li>ProductsShows</li>
+            </ul>
+        </div>
+        <div class="text2">
+            <ul>
+                <li><h3 style="color: rgb(255, 255, 255);">Category</h3></li>
+                <li>Mein</li>
+                <li>Now in</li>
+                <li>Weekly Pick</li>
+            </ul>
+        </div>
+        <div class="text2">
+            <ul>
+                <li><h3 style="color: rgb(255, 255, 255);">Company Info</h3></li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Payment Options</li>
+                <li>Track Order</li>
+                <li>Support</li>
+                <li>Vouchers</li>
+                <li>Size Charts</li>
+            </ul>
+        </div>
+        <div class="text2">
+            <ul>
+                <li><h3 style="color: rgb(255, 255, 255);">Follow us</h3></li>
+                <li><i  class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i  class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+       
+       </div>
+       </div>
+       <div class="last-line">
+        <ul>
+            <li>Data settings</li>
+            <li>Cookie settings</li>
+            <li>Privacy Policy</li>
+            <li>Terms And Conditions</li>
+            <li>Imprint</li>
+        </ul>
+       </div>
+    </footer> 
 </body>
 
 </html>
